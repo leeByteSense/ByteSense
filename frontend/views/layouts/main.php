@@ -85,7 +85,16 @@
 		</div>
 	</div>
 </div>
-
+<div class="input-append">
+<?php $this->widget('yiiwheels.widgets.datepicker.WhDatePicker', array(
+    'name' => 'datepickertest',
+    'pluginOptions' => array(
+        'format' => 'mm/dd/yyyy'
+    )
+));
+?>
+<span class="add-on"><icon class="icon-calendar"></icon></span>
+</div>
 <?php echo $content; ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
