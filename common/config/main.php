@@ -28,9 +28,13 @@ return array(
 		'application.models.*'
 	),
 	'components' => array(
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+        'db'=>array(
+            'connectionString' => 'mysql:host=192.168.1.66;dbname=yii',
+            'emulatePrepare' => true,
+            'username' => 'bytesense',
+            'password' => '92198',
+            'charset' => 'utf8',
+        ),
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
 		),
